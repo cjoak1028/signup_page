@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Login Page Style */
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+    font: 16px 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--red) url("./images/bg-intro-mobile.png") no-repeat fixed center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E0E0E0;
+    margin-top: 90px;
+}
+
+.description h1 {
+    font-size: 1.7em; 
+    font-weight: 550;
+    width: 65%;
+    text-align: center;
+    color: #F8F8F8;
+    line-height: 1.3em;
+}
+
+.description p {
+    text-align: center;
+    line-height: 1.65em;
+    width: 85%;
+    margin-top: 1.6em;
+}
+
+.deal {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.8em;
+    width: 85%;
+    padding: 1.2em 0;
+    background: var(--blue);
+    border-radius: 0.75em;
+    box-shadow: 0 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.deal p {
+    text-align: center;
+    line-height: 1.7em;
+    width: 60%;
+    color: #E0E0E0;
+}
