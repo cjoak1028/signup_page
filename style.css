@@ -79,7 +79,7 @@ body {
 }
 
 .header {
-    margin-top: 5.6em;
+    margin: 5.6em 0 0 0;
 }
 
 .header__title, .header__description, .card {
@@ -90,18 +90,18 @@ body {
 .header__title {
     font-size: 1.7em; 
     font-weight: 550;
+    line-height: 1.3;
     color: #F8F8F8;
-    line-height: 1.3em;
 }
 
 .header__description {
-    line-height: 1.65em;
-    margin-top: 1.6em;
+    line-height: 1.65;
+    margin: 1.6em 0 0 0;
     color: #E0E0E0;
 }
 
 .card {
-    margin-top: 3.8em;
+    margin: 3.8em 0 0 0;
     padding: 1.2em 0;
     background: var(--blue);
     border-radius: 0.75em;
@@ -109,27 +109,26 @@ body {
 }
 
 .card__text {
-    line-height: 1.7em;
+    line-height: 1.7;
     width: 60%;
     color: #E0E0E0;
 }
 
 .form {
-    margin-top: 1.3em;
+    margin: 1.3em 0 3.8em;
     width: calc(100% - 6em);
     background: #F8F8F8;
     border-radius: 0.75em;
     padding: 1.5em;
     box-shadow: 0 0.5em rgba(0, 0, 0, 0.25);
-    margin-bottom: 3.8em;
 }
 
 .form input {
     width: calc(100% - 1.5em);
     height: 3.4em;
     border-radius: 0.5em;
-    padding-left: 1.5em;
-    margin-bottom: 1.3em;
+    padding: 0 0 0 1.5em;
+    margin: 0 0 1.3em 0;
     border: 1px solid #E0E0E0;
     background-color: #F8F8F8;
     font: inherit;
@@ -151,17 +150,24 @@ body {
 
 .terms {
     width: 90%;
-    margin-top: 1.3em;
+    margin: 1.3em 0 0 0;
     text-align: center;
 }
 
 .terms__text {
     color: #b1afaf;
     font-size: 0.7em;
-    line-height: 2em;
+    line-height: 2;
 }
 
 .terms__text a {
     color: var(--red);
     font-weight: 700;
 }
+
+@media only screen and (min-width: 375px) {
+    body {
+        background: var(--red) url("./images/bg-intro-desktop.png") repeat fixed;
+    }
+}
+
