@@ -61,12 +61,16 @@ html {
 }
 
 body {
-    background: var(--red) url("./images/bg-intro-mobile.png") no-repeat fixed center;
+    background: var(--red) url("./images/bg-intro-mobile.png") repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-container {
     display: flex;
-    width: 100vw;
+    width: 85%;
+    max-width: 500px;
 }
 
 .flex-container--col {
@@ -75,6 +79,7 @@ body {
 }
 
 .flex-container--row {
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -83,7 +88,7 @@ body {
 }
 
 .header__title, .header__description, .card {
-    width: calc(100% - 3em);
+    width: 100%;
     text-align: center;
 }
 
@@ -102,7 +107,7 @@ body {
 
 .card {
     margin: 3.8em 0 0 0;
-    padding: 1.2em 0;
+    padding: 1.0em 0;
     background: var(--blue);
     border-radius: 0.75em;
     box-shadow: 0 0.5em rgba(0, 0, 0, 0.15);
@@ -110,13 +115,13 @@ body {
 
 .card__text {
     line-height: 1.7;
-    width: 60%;
+    width: 70%;
     color: #E0E0E0;
 }
 
 .form {
     margin: 1.3em 0 3.8em;
-    width: calc(100% - 6em);
+    width: calc(100% - 3em);
     background: #F8F8F8;
     border-radius: 0.75em;
     padding: 1.5em;
@@ -165,9 +170,35 @@ body {
     font-weight: 700;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 600px) {
     body {
-        background: var(--red) url("./images/bg-intro-desktop.png") repeat fixed;
+        background: var(--red) url("./images/bg-intro-desktop.png") repeat fixed center;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        flex-direction: row;
+        justify-content: center;
+        min-height: 800px;
+    }
+
+    .header {
+        margin: 0 3em 0 3em;
+    }
+
+    .mr {
+        margin-right: 3em;
+    }
+
+    .header__title, .header__description {
+        text-align: left;
+    }
+
+    .header__title {
+        font-size: 2.6em; 
+        font-weight: 600;
+        line-height: 1.1;
     }
 }
 
