@@ -128,17 +128,50 @@ body {
     box-shadow: 0 0.5em rgba(0, 0, 0, 0.25);
 }
 
-.form input {
+.input-container {
+    width: calc(100%);
+    margin: 0 0 1.3em 0;
+}
+
+.input-container input {
     width: calc(100% - 1.5em);
     height: 3.4em;
     border-radius: 0.5em;
     padding: 0 0 0 1.5em;
-    margin: 0 0 1.3em 0;
     border: 1px solid #E0E0E0;
     background-color: #F8F8F8;
     font: inherit;
     font-size: 0.9em;
     font-weight: 600;
+}
+
+p.alert {
+    color: #ff6666;
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: right;
+    margin-top: 1.0em;
+}
+
+input:focus {
+    border: black 1px solid;
+    outline: none;
+}
+
+input.invalid {
+    border: #ff6666 2px solid;
+    background: url('./images/icon-error.svg') no-repeat right;
+    background-origin: content-box;
+    padding-right: 25px;
+    width: calc(100% - 50px);
+}
+
+[data-validation-message] {
+    display: none;
+}
+
+[data-validation-message].message-visible {
+    display: block;
 }
 
 .form button {
